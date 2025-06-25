@@ -9,7 +9,7 @@ MAX_FILE_SIZE = 50 * 1024 * 1024  # 120MB
 CHUNK_SIZE_MB = 25
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("🎯 أرسل رابط لملف وبرسله لك .")
+    await update.message.reply_text("🎯 أرسل رابط لملف عشان ارسله لك .")
 
 def split_file(file_path, chunk_size_mb):
     parts = []
