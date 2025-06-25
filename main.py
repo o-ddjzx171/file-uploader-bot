@@ -5,7 +5,7 @@ from telegram import Update, Message
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
-MAX_FILE_SIZE = 120 * 1024 * 1024  # 120MB
+MAX_FILE_SIZE = 50 * 1024 * 1024  # 120MB
 CHUNK_SIZE_MB = 25
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
